@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="ornament">&#9670; &#9670; &#9670;</div>
+  <h1>{{ site.title }}</h1>
+  <p class="lede">{{ site.description }}</p>
+  <div class="hero-rule"></div>
+</section>
+
+<div class="grid">
+  <a class="card" href="{{ '/lore/' | relative_url }}">
+    <p class="eyebrow">The World</p>
+    <h3>Lore &amp; Wiki</h3>
+    <p>Nations, factions, history, and the powers that shape our world.</p>
+  </a>
+  <a class="card" href="{{ '/sessions/' | relative_url }}">
+    <p class="eyebrow">The Chronicle</p>
+    <h3>Session Recaps</h3>
+    <p>What happened, game by game — the unfolding story of the party.</p>
+  </a>
+  <a class="card" href="{{ '/npcs/' | relative_url }}">
+    <p class="eyebrow">People</p>
+    <h3>NPCs</h3>
+    <p>Allies, rivals, and the strangers you've crossed paths with.</p>
+  </a>
+  <a class="card" href="{{ '/characters/' | relative_url }}">
+    <p class="eyebrow">The Heroes</p>
+    <h3>The Party</h3>
+    <p>The adventurers whose tale this is.</p>
+  </a>
+  <a class="card" href="{{ '/events/' | relative_url }}">
+    <p class="eyebrow">History</p>
+    <h3>Timeline</h3>
+    <p>The important events, in the order they came to pass.</p>
+  </a>
+  <a class="card" href="{{ '/maps/' | relative_url }}">
+    <p class="eyebrow">Handouts</p>
+    <h3>Maps &amp; Documents</h3>
+    <p>Maps, letters, and other things the party has gathered.</p>
+  </a>
+</div>

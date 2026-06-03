@@ -1,0 +1,150 @@
+/* ===========================================================================
+   THE EBERRON VAULT — theme
+   A dark, art-deco / magitech-noir look: slate, brass, and arcane teal.
+   Tweak the variables below to recolor the whole site at once.
+   =========================================================================== */
+
+:root {
+  --bg:        #14171c;   /* deep slate */
+  --bg-2:      #1b1f26;   /* panel */
+  --bg-3:      #232934;   /* raised panel */
+  --ink:       #e7e3d6;   /* parchment text */
+  --ink-soft:  #b3ab97;
+  --muted:     #7e8896;
+  --brass:     #c9a44c;   /* gold/brass accent */
+  --brass-2:   #e3c878;
+  --teal:      #4fb8a8;   /* arcane teal */
+  --rule:      #2e3744;
+  --shadow:    0 8px 30px rgba(0,0,0,.45);
+  --maxw:      1040px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 50% -200px, #20262f 0%, var(--bg) 55%) fixed,
+    var(--bg);
+  color: var(--ink);
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+a { color: var(--brass-2); text-decoration: none; }
+a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+h1, h2, h3, h4 {
+  font-family: "Cinzel", "Cinzel Decorative", serif;
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.muted { color: var(--muted); }
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,0));
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(6px);
+}
+.header-inner { display: flex; align-items: center; gap: 1rem; padding: .85rem 1.25rem; }
+.brand { display: flex; align-items: center; gap: .55rem; font-family: "Cinzel", serif; font-size: 1.15rem; color: var(--ink); letter-spacing: .06em; text-transform: uppercase; }
+.brand:hover { text-decoration: none; color: var(--brass-2); }
+.brand-mark { color: var(--brass); transform: translateY(-1px); }
+.site-nav { margin-left: auto; display: flex; gap: 1.4rem; flex-wrap: wrap; }
+.site-nav a {
+  font-family: "Cinzel", serif; font-size: .82rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-soft); padding: .25rem 0;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover { color: var(--brass-2); border-bottom-color: var(--brass); text-decoration: none; }
+.nav-toggle { display: none; background: none; border: 0; color: var(--brass-2); font-size: 1.5rem; cursor: pointer; margin-left: auto; }
+
+/* ---------- Main ---------- */
+.site-main { padding: 2.5rem 1.25rem 3.5rem; min-height: 60vh; }
+
+/* ---------- Hero (landing) ---------- */
+.hero { text-align: center; padding: 3.5rem 1rem 2.5rem; }
+.hero .ornament { color: var(--brass); letter-spacing: .5em; font-size: 1.1rem; margin-bottom: 1rem; }
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin: .2rem 0;
+  background: linear-gradient(180deg, var(--brass-2), var(--brass));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero .lede { font-size: 1.3rem; color: var(--ink-soft); max-width: 640px; margin: 1rem auto 0; font-style: italic; }
+.hero-rule { width: 120px; height: 1px; background: var(--brass); margin: 1.8rem auto; opacity: .6; }
+
+/* ---------- Card grid ---------- */
+.grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); margin-top: 1.5rem; }
+.card {
+  display: block; background: var(--bg-2); border: 1px solid var(--rule);
+  border-radius: 10px; padding: 1.3rem 1.4rem; box-shadow: var(--shadow);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.card:hover { transform: translateY(-3px); border-color: var(--brass); text-decoration: none; }
+.card h3 { margin: .1rem 0 .4rem; color: var(--brass-2); }
+.card p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+.card .eyebrow { margin-bottom: .5rem; }
+
+/* ---------- Eyebrow / section heads ---------- */
+.eyebrow { font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--teal); margin: 0 0 .4rem; }
+.section-head { border-bottom: 1px solid var(--rule); padding-bottom: .8rem; margin-bottom: 1.5rem; }
+.section-head h1 { font-size: 2.3rem; margin: .2rem 0; }
+.section-head p { color: var(--ink-soft); margin: .3rem 0 0; }
+
+/* ---------- Entry pages ---------- */
+.entry { max-width: 760px; margin: 0 auto; }
+.entry-title { font-size: 2.6rem; margin: .2rem 0 .4rem; }
+.entry-subtitle { font-size: 1.25rem; color: var(--ink-soft); font-style: italic; margin: 0 0 1rem; }
+.meta-list { list-style: none; padding: 0; margin: 1.2rem 0; display: flex; flex-wrap: wrap; gap: .5rem .75rem; }
+.meta-list li { background: var(--bg-3); border: 1px solid var(--rule); border-radius: 999px; padding: .25rem .9rem; font-size: .92rem; color: var(--ink-soft); }
+.meta-list strong { color: var(--teal); font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; margin-right: .4rem; font-weight: 600; }
+
+.prose { margin-top: 1.5rem; }
+.prose h2 { font-size: 1.6rem; margin: 2rem 0 .6rem; color: var(--brass-2); }
+.prose h3 { font-size: 1.25rem; margin: 1.5rem 0 .4rem; }
+.prose img { max-width: 100%; border-radius: 8px; border: 1px solid var(--rule); }
+.prose blockquote { border-left: 3px solid var(--brass); margin: 1.2rem 0; padding: .3rem 1.2rem; color: var(--ink-soft); font-style: italic; background: var(--bg-2); }
+.prose code { background: var(--bg-3); padding: .1rem .4rem; border-radius: 4px; font-size: .9em; }
+.prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+.prose ul, .prose ol { padding-left: 1.3rem; }
+
+.back-link { margin-top: 2.5rem; font-family: "Cinzel", serif; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; }
+
+/* ---------- Timeline ---------- */
+.timeline { list-style: none; padding: 0; margin: 1.5rem 0; border-left: 2px solid var(--rule); }
+.timeline li { position: relative; padding: 0 0 1.8rem 1.8rem; }
+.timeline li::before { content: "\25C6"; position: absolute; left: -.62rem; top: 0; color: var(--brass); background: var(--bg); font-size: .8rem; }
+.timeline .t-date { font-family: "Cinzel", serif; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); }
+.timeline h3 { margin: .15rem 0 .3rem; font-size: 1.2rem; }
+.timeline p { margin: 0; color: var(--ink-soft); }
+
+/* ---------- Maps grid ---------- */
+.gallery { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin-top: 1.5rem; }
+.gallery figure { margin: 0; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
+.gallery img { display: block; width: 100%; height: auto; }
+.gallery figcaption { padding: .8rem 1rem; color: var(--ink-soft); font-size: .95rem; }
+
+/* ---------- Footer ---------- */
+.site-footer { border-top: 1px solid var(--rule); padding: 2rem 0; margin-top: 2rem; text-align: center; color: var(--muted); font-size: .95rem; }
+.site-footer p { margin: .2rem 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .site-nav { display: none; width: 100%; flex-direction: column; gap: .2rem; margin: .5rem 0 0; }
+  body.nav-open .site-nav { display: flex; }
+  body.nav-open .header-inner { flex-wrap: wrap; }
+  .site-nav a { padding: .6rem 0; border-bottom: 1px solid var(--rule); }
+}

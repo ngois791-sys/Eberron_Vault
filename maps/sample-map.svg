@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Georgia, serif">
+  <defs>
+    <radialGradient id="parch" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#efe4c8"/>
+      <stop offset="100%" stop-color="#d8c79f"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#parch)"/>
+  <rect x="14" y="14" width="772" height="492" fill="none" stroke="#8a6f3b" stroke-width="3"/>
+  <rect x="22" y="22" width="756" height="476" fill="none" stroke="#8a6f3b" stroke-width="1"/>
+
+  <!-- coastline -->
+  <path d="M120,120 C200,90 300,140 360,120 C440,95 520,150 600,130 C660,116 700,150 700,200
+           C700,260 640,300 660,360 C672,400 620,440 540,430 C460,420 420,460 340,450
+           C260,440 200,400 170,340 C140,285 90,250 110,190 C122,154 100,140 120,120 Z"
+        fill="#b9c9a6" stroke="#5e7048" stroke-width="2" opacity="0.85"/>
+
+  <!-- river -->
+  <path d="M300,140 C320,210 280,260 330,310 C370,350 360,400 410,440"
+        fill="none" stroke="#6f97b0" stroke-width="3" opacity="0.8"/>
+
+  <!-- city markers -->
+  <g fill="#7a2e2e">
+    <circle cx="360" cy="120" r="6"/><text x="372" y="118" font-size="16" fill="#4a3416">Skyreach</text>
+    <circle cx="540" cy="300" r="6"/><text x="552" y="304" font-size="16" fill="#4a3416">Emberhold</text>
+    <circle cx="230" cy="330" r="6"/><text x="242" y="334" font-size="16" fill="#4a3416">Greywater</text>
+  </g>
+
+  <!-- compass rose -->
+  <g transform="translate(700,420)" stroke="#8a6f3b" fill="#8a6f3b">
+    <circle r="28" fill="none" stroke-width="1.5"/>
+    <path d="M0,-34 L6,0 L0,34 L-6,0 Z" fill="#7a2e2e" stroke="none"/>
+    <path d="M-34,0 L0,6 L34,0 L0,-6 Z" fill="#8a6f3b" stroke="none" opacity="0.6"/>
+    <text x="-5" y="-38" font-size="14">N</text>
+  </g>
+
+  <text x="400" y="62" text-anchor="middle" font-size="30" fill="#4a3416"
+        font-family="'Cinzel', Georgia, serif" letter-spacing="3">THE KNOWN REACHES</text>
+  <text x="400" y="486" text-anchor="middle" font-size="13" fill="#6b5a33" font-style="italic">
+    a placeholder map — replace maps/sample-map.svg with your own
+  </text>
+</svg>
