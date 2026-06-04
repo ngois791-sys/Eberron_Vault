@@ -192,13 +192,20 @@ h1, h2, h3, h4 {
 .prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; text-align: center; }
 
 /* ---------- House panels (reference entries) ---------- */
-.house { background: var(--bg-2); border: 1px solid var(--rule); border-radius: 10px; padding: 1.2rem 1.5rem 1.35rem; margin: 1.3rem 0; box-shadow: var(--shadow); }
+.house { display: flex; gap: 1.3rem; align-items: flex-start; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 10px; padding: 1.2rem 1.5rem 1.35rem; margin: 1.3rem 0; box-shadow: var(--shadow); }
+.house-crest { flex: 0 0 108px; width: 108px; height: auto; border-radius: 8px; border: 1px solid var(--rule); box-shadow: 0 2px 10px rgba(0,0,0,.35); }
+.house-body { flex: 1 1 auto; min-width: 0; }
 .house h2 { margin: .1rem 0 .7rem; color: var(--brass-2); font-size: 1.5rem; }
 .house .meta-list { margin: .2rem 0 .9rem; }
 .house p { margin: .55rem 0 0; color: var(--ink); }
 .house .hq { color: var(--ink-soft); }
 .house .hq strong, .house .known strong { color: var(--teal); font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 .house .known { color: var(--ink-soft); }
+@media (max-width: 560px) {
+  .house { flex-direction: column; align-items: center; }
+  .house-crest { width: 130px; flex-basis: auto; }
+  .house-body { width: 100%; }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
