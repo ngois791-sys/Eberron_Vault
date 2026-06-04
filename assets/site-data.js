@@ -34,8 +34,8 @@ const SITE_PAGES = [
     title: "The Dragonmarked Houses",
     url: "lore/dragonmarked-houses.html",
     section: "Lore",
-    summary: "Mercantile dynasties whose arcane birthmarks grant them a monopoly on magic and trade.",
-    tags: ["Factions", "Magic"]
+    summary: "The mercantile dynasties whose arcane birthmarks grant them a near-monopoly on magic and trade. All fourteen houses, their marks, sigils, and known members.",
+    tags: ["Factions", "Dragonmarked Houses"]
   },
 
   // ----- Sessions -----
