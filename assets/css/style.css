@@ -176,6 +176,21 @@ h1, h2, h3, h4 {
 .tag-cloud { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
 .tag-cloud .tag { font-size: .85rem; padding: .4rem 1.05rem; }
 
+/* ---------- Home intro + buttons ---------- */
+.home-intro { max-width: 720px; margin: -.5rem auto 2.6rem; text-align: center; }
+.home-intro p { color: var(--ink-soft); font-size: 1.18rem; font-style: italic; margin: 0 0 1.1rem; }
+.btn {
+  display: inline-block; padding: .62rem 1.6rem;
+  font-family: "Cinzel", serif; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--bg); background: linear-gradient(180deg, var(--brass-2), var(--brass));
+  border: 1px solid var(--brass); border-radius: 999px;
+}
+.btn:hover { color: var(--bg); filter: brightness(1.08); text-decoration: none; }
+
+/* ---------- Figures inside prose ---------- */
+.prose figure { margin: 1.7rem 0; }
+.prose figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; text-align: center; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
   .nav-toggle { display: block; }

@@ -17,6 +17,13 @@ const SITE_PAGES = [
 
   // ----- Lore -----
   {
+    title: "An Introduction to Khorvaire",
+    url: "lore/introduction.html",
+    section: "Lore",
+    summary: "The myth of the Progenitor Dragons, the fall of Galifar, and the war that shattered the Five Nations.",
+    tags: ["History", "Khorvaire"]
+  },
+  {
     title: "The Last War",
     url: "lore/the-last-war.html",
     section: "Lore",
