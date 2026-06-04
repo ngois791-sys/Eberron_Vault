@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  ===========================================================================
+  HOW TO ADD A SESSION RECAP
+  1. Copy this file into the  sessions  folder.
+  2. Rename it, e.g.  sessions/session-02-the-vault.html
+  3. Edit the bits marked  EDIT  below (including the tag chips).
+  4. Open sessions.html, copy a card block, and put the NEWEST at the top.
+  5. IMPORTANT — open  assets/site-data.js  and add an entry for this page so
+     Search and Tags can find it. (Or just ask Claude to do steps 4 & 5.)
+  ===========================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Session N · The Eberron Vault</title><!-- EDIT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark">&#9670;</span><span class="brand-text">The Eberron Vault</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+      <nav class="site-nav">
+        <a href="../lore.html">Lore</a>
+        <a href="../sessions.html">Sessions</a>
+        <a href="../npcs.html">NPCs</a>
+        <a href="../characters.html">Party</a>
+        <a href="../events.html">Timeline</a>
+        <a href="../maps.html">Maps</a>
+        <a href="../tags.html">Tags</a>
+      </nav>
+      <div class="site-search">
+        <input type="search" id="site-search" autocomplete="off" placeholder="Search the Vault" aria-label="Search the Vault">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap site-main">
+    <article class="entry">
+      <p class="eyebrow">Session Recap</p>
+      <h1 class="entry-title">Session N &mdash; A Short Title</h1><!-- EDIT -->
+
+      <ul class="meta-list"><!-- EDIT -->
+        <li><strong>Date</strong> Month D, YYYY</li>
+        <li><strong>Location</strong> Where it happened</li>
+      </ul>
+
+      <!-- EDIT tag chips. Use %20 for spaces in the tag= part. -->
+      <p class="tags">
+        <a class="tag" href="../tags.html?tag=Session">Session</a>
+      </p>
+
+      <div class="prose"><!-- EDIT everything between this line and </div> -->
+        <p>A paragraph or two of narrative recap.</p>
+
+        <h2>What Happened</h2>
+        <ul>
+          <li>A beat from the session.</li>
+        </ul>
+
+        <h2>Loose Threads</h2>
+        <ul>
+          <li>A hook for next time.</li>
+        </ul>
+      </div>
+
+      <p class="back-link"><a href="../sessions.html">&larr; Back to Sessions</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The Eberron Vault &mdash; A Campaign Companion</p>
+      <p class="muted">Compiled by the Keeper of the Vault. For the eyes of our table.</p>
+    </div>
+  </footer>
+
+  <script>var SITE_BASE = "../";</script>
+  <script src="../assets/site-data.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

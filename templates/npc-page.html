@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  ===========================================================================
+  HOW TO ADD AN NPC
+  1. Copy this file into the  npcs  folder.
+  2. Rename it, e.g.  npcs/captain-rhett.html  (lowercase, dashes, .html).
+  3. Edit the bits marked  EDIT  below (including the tag chips).
+  4. Open npcs.html, copy a card block, and point it at your new file.
+  5. IMPORTANT — open  assets/site-data.js  and add an entry for this page so
+     Search and Tags can find it. (Or just ask Claude to do steps 4 & 5.)
+  ===========================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>NPC NAME · The Eberron Vault</title><!-- EDIT: page title (shows on browser tab) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark">&#9670;</span><span class="brand-text">The Eberron Vault</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+      <nav class="site-nav">
+        <a href="../lore.html">Lore</a>
+        <a href="../sessions.html">Sessions</a>
+        <a href="../npcs.html">NPCs</a>
+        <a href="../characters.html">Party</a>
+        <a href="../events.html">Timeline</a>
+        <a href="../maps.html">Maps</a>
+        <a href="../tags.html">Tags</a>
+      </nav>
+      <div class="site-search">
+        <input type="search" id="site-search" autocomplete="off" placeholder="Search the Vault" aria-label="Search the Vault">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap site-main">
+    <article class="entry">
+      <p class="eyebrow">NPC</p>
+      <h1 class="entry-title">NPC Name</h1><!-- EDIT -->
+
+      <ul class="meta-list"><!-- EDIT each value; delete any line you don't need -->
+        <li><strong>Role</strong> What they do</li>
+        <li><strong>Race</strong> Their ancestry</li>
+        <li><strong>Location</strong> Where they're found</li>
+        <li><strong>Status</strong> Alive / Dead / Missing / Unknown</li>
+      </ul>
+
+      <!-- EDIT tag chips: one <a> per tag. The word after tag= must match the -->
+      <!-- chip text and the tags you list in site-data.js. Use %20 for spaces. -->
+      <p class="tags">
+        <a class="tag" href="../tags.html?tag=NPC">NPC</a>
+        <a class="tag" href="../tags.html?tag=City%20of%20Towers">City of Towers</a>
+      </p>
+
+      <div class="prose"><!-- EDIT everything between this line and </div> -->
+        <p>A description of who they are and how the party met them.</p>
+
+        <h2>What the Party Knows</h2>
+        <ul>
+          <li>A fact.</li>
+          <li>Another fact.</li>
+        </ul>
+      </div>
+
+      <p class="back-link"><a href="../npcs.html">&larr; Back to NPCs</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The Eberron Vault &mdash; A Campaign Companion</p>
+      <p class="muted">Compiled by the Keeper of the Vault. For the eyes of our table.</p>
+    </div>
+  </footer>
+
+  <script>var SITE_BASE = "../";</script>
+  <script src="../assets/site-data.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

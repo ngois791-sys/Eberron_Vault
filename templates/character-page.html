@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  ===========================================================================
+  HOW TO ADD A PLAYER CHARACTER
+  1. Copy this file into the  characters  folder.
+  2. Rename it, e.g.  characters/thorn-blackwood.html
+  3. Edit the bits marked  EDIT  below (including the tag chips).
+  4. Open characters.html, copy a card block, and point it at your new file.
+  5. IMPORTANT — open  assets/site-data.js  and add an entry for this page so
+     Search and Tags can find it. (Or just ask Claude to do steps 4 & 5.)
+  ===========================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Character Name · The Eberron Vault</title><!-- EDIT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark">&#9670;</span><span class="brand-text">The Eberron Vault</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+      <nav class="site-nav">
+        <a href="../lore.html">Lore</a>
+        <a href="../sessions.html">Sessions</a>
+        <a href="../npcs.html">NPCs</a>
+        <a href="../characters.html">Party</a>
+        <a href="../events.html">Timeline</a>
+        <a href="../maps.html">Maps</a>
+        <a href="../tags.html">Tags</a>
+      </nav>
+      <div class="site-search">
+        <input type="search" id="site-search" autocomplete="off" placeholder="Search the Vault" aria-label="Search the Vault">
+        <div id="search-results" class="search-results" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap site-main">
+    <article class="entry">
+      <p class="eyebrow">Player Character</p>
+      <h1 class="entry-title">Character Name</h1><!-- EDIT -->
+
+      <ul class="meta-list"><!-- EDIT -->
+        <li><strong>Player</strong> Player's name</li>
+        <li><strong>Class</strong> Class &amp; level</li>
+        <li><strong>Race</strong> Ancestry</li>
+        <li><strong>Status</strong> Active / Retired / Fallen</li>
+      </ul>
+
+      <!-- EDIT tag chips. Use %20 for spaces in the tag= part. -->
+      <p class="tags">
+        <a class="tag" href="../tags.html?tag=Player%20Character">Player Character</a>
+      </p>
+
+      <div class="prose"><!-- EDIT everything between this line and </div> -->
+        <p>A short in-character introduction.</p>
+
+        <h2>Background</h2>
+        <p>Backstory goes here.</p>
+
+        <h2>Goals</h2>
+        <ul>
+          <li>What they're after.</li>
+        </ul>
+      </div>
+
+      <p class="back-link"><a href="../characters.html">&larr; Back to The Party</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The Eberron Vault &mdash; A Campaign Companion</p>
+      <p class="muted">Compiled by the Keeper of the Vault. For the eyes of our table.</p>
+    </div>
+  </footer>
+
+  <script>var SITE_BASE = "../";</script>
+  <script src="../assets/site-data.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
