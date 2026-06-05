@@ -57,27 +57,36 @@ below — **or just ask Claude to make a page for you** and paste in the result.
 index.html            the home page
 lore.html             \
 sessions.html          |
-npcs.html              |  the six section pages (the lists of cards)
-characters.html        |
+npcs.html              |  the section pages (the lists of cards)
+heroes.html            |
 events.html            |
-maps.html             /
+maps.html              |
+tags.html             /   (auto-built; lists every tag)
 
-lore/        sessions/   npcs/   characters/    <- one HTML file per entry
-templates/                                       <- copy-me starter pages
-assets/css/style.css                             <- the whole look lives here
-maps/                                            <- map & handout images
+lore/   sessions/   npcs/   heroes/        <- one HTML file per entry
+templates/                                  <- copy-me starter pages
+assets/css/style.css                        <- the whole look lives here
+assets/site-data.js                         <- the search & tags index (see below)
+assets/site.js                              <- powers search + the tags page
+assets/img/                                 <- images (e.g. house crests)
+maps/                                       <- map & handout images
 ```
 
-### To add an entry (NPC, session, lore page, or character)
+### To add an entry (NPC, session, lore page, or hero)
 
 1. Go to the matching `templates/…-page.html` file and **make a copy** of it in
-   the matching section folder (`npcs/`, `sessions/`, `lore/`, or `characters/`).
+   the matching section folder (`npcs/`, `sessions/`, `lore/`, or `heroes/`).
    - Example: copy `templates/npc-page.html` to `npcs/captain-rhett.html`.
 2. Open your new file and edit the parts marked `<!-- EDIT -->`.
-   - Preview it any time by double-clicking it.
+   - Preview it any time by opening it in your web browser.
 3. Open the section page (e.g. `npcs.html`), find the comment that says
    **"TO ADD …"**, copy one card block, and change its link + text to point at
    your new page. (This is the one line that puts it in the list.)
+4. Open `assets/site-data.js` and add an entry for the page (copy a block) so
+   **Search and the Tags page** can find it.
+
+*(Or skip all of this and just ask Claude to make the page — it'll wire up the
+card and the search index for you.)*
 
 ### To add a timeline event
 

@@ -64,20 +64,34 @@ const SITE_PAGES = [
     tags: ["NPC", "City of Towers"]
   },
 
-  // ----- Party -----
+  // ----- Heroes of the Realm -----
   {
-    title: "Kessa Ironwright",
-    url: "characters/kessa-ironwright.html",
-    section: "Party",
-    summary: "A warforged artificer searching the city for the maker who left her behind.",
-    tags: ["Player Character", "Warforged"]
+    title: "Kitt",
+    url: "heroes/kitt.html",
+    section: "Heroes",
+    summary: "A dragonmarked wanderer bound for Arcanix, with a dragon's bones at her back.",
+    tags: ["Hero", "Champions of Eberron"]
+  },
+  {
+    title: "Leroy Van Helsing",
+    url: "heroes/leroy-van-helsing.html",
+    section: "Heroes",
+    summary: "A blood-sworn hunter tracking the werewolves that destroyed his family.",
+    tags: ["Hero", "The Dark Pack"]
+  },
+  {
+    title: "Ziolda",
+    url: "heroes/ziolda.html",
+    section: "Heroes",
+    summary: "A knight of the Sacred Flame who walked back from death, and the chosen Champion of Siberys.",
+    tags: ["Hero", "Champions of Siberys"]
   },
 
   // ----- Section pages (so search can find them too; usually no tags) -----
   { title: "Lore & Wiki",     url: "lore.html",       section: "Section", summary: "Nations, factions, history, and the powers that shape our world.", tags: [] },
   { title: "Session Recaps",  url: "sessions.html",   section: "Section", summary: "The story so far, told one session at a time.",                   tags: [] },
   { title: "NPCs",            url: "npcs.html",        section: "Section", summary: "Everyone the party has met and thought worth remembering.",        tags: [] },
-  { title: "The Party",       url: "characters.html",  section: "Section", summary: "The adventurers whose tale this is.",                              tags: [] },
+  { title: "Heroes of the Realm", url: "heroes.html",  section: "Section", summary: "The adventurers whose tale this is.",                              tags: [] },
   { title: "Timeline",        url: "events.html",      section: "Section", summary: "The important events, in the order they came to pass.",            tags: [] },
   { title: "Maps & Handouts", url: "maps.html",        section: "Section", summary: "Maps, letters, and other things the party has gathered.",          tags: [] }
 
