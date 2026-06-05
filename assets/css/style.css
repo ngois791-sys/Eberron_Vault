@@ -206,6 +206,12 @@ h1, h2, h3, h4 {
   .house-crest { width: 130px; flex-basis: auto; }
   .house-body { width: 100%; }
 }
+.house h4 { margin: 1.05rem 0 .35rem; color: var(--teal); font-family: "Cinzel", serif; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.house ul.enemies { margin: .2rem 0 0; padding-left: 1.2rem; }
+.house ul.enemies li { margin: .4rem 0; color: var(--ink-soft); }
+.house ul.enemies strong { color: var(--brass-2); }
+.gift { margin: 1.15rem 0 0; padding: .65rem 1rem; background: var(--bg-3); border-left: 3px solid var(--brass); border-radius: 6px; color: var(--ink-soft); }
+.gift strong { display: block; margin-bottom: .15rem; color: var(--teal); font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {

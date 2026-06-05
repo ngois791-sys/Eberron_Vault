@@ -38,6 +38,14 @@ const SITE_PAGES = [
     tags: ["Factions", "Dragonmarked Houses"]
   },
 
+  {
+    title: "Ancient Paladins — Champions of Siberys",
+    url: "lore/ancient-paladins.html",
+    section: "Lore",
+    summary: "The great paladins of ages past — Tira Miron, Inarieth, Khardam Silvereye, and Traelor — whose spirits have armed Ziolda.",
+    tags: ["History", "Champions of Siberys"]
+  },
+
   // ----- Sessions -----
   {
     title: "Session 1 — Arrival in the City of Towers",
