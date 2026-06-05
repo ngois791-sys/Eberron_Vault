@@ -213,6 +213,21 @@ h1, h2, h3, h4 {
 .gift { margin: 1.15rem 0 0; padding: .65rem 1rem; background: var(--bg-3); border-left: 3px solid var(--brass); border-radius: 6px; color: var(--ink-soft); }
 .gift strong { display: block; margin-bottom: .15rem; color: var(--teal); font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 
+/* ---------- Downloads list ---------- */
+.downloads { list-style: none; padding: 0; margin: 1.5rem 0; display: flex; flex-direction: column; gap: .9rem; }
+.download { display: flex; align-items: center; gap: 1rem; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1.2rem; box-shadow: var(--shadow); }
+.dl-type { flex: 0 0 auto; min-width: 3.4rem; text-align: center; font-family: "Cinzel", serif; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--bg); background: linear-gradient(180deg, var(--brass-2), var(--brass)); border-radius: 6px; padding: .4rem .55rem; }
+.dl-body { flex: 1 1 auto; min-width: 0; }
+.dl-body h3 { margin: 0 0 .12rem; font-size: 1.15rem; color: var(--brass-2); }
+.dl-body p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
+.dl-btn { flex: 0 0 auto; display: inline-block; padding: .5rem 1.25rem; font-family: "Cinzel", serif; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--bg); background: linear-gradient(180deg, var(--brass-2), var(--brass)); border: 1px solid var(--brass); border-radius: 999px; }
+.dl-btn:hover { filter: brightness(1.08); color: var(--bg); text-decoration: none; }
+@media (max-width: 560px) {
+  .download { flex-wrap: wrap; }
+  .dl-body { flex-basis: 100%; order: 2; }
+  .dl-btn { width: 100%; text-align: center; order: 3; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
   .nav-toggle { display: block; }
