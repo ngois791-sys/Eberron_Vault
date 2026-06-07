@@ -213,6 +213,11 @@ h1, h2, h3, h4 {
 .gift { margin: 1.15rem 0 0; padding: .65rem 1rem; background: var(--bg-3); border-left: 3px solid var(--brass); border-radius: 6px; color: var(--ink-soft); }
 .gift strong { display: block; margin-bottom: .15rem; color: var(--teal); font-family: "Cinzel", serif; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 
+/* ---------- Verse / poetry ---------- */
+.verse { margin: 1.4rem 0; padding: .4rem 0 .4rem 1.4rem; border-left: 3px solid var(--brass); font-style: italic; color: var(--ink); }
+.verse p { margin: 0 0 1.1rem; line-height: 1.95; }
+.verse p:last-child { margin-bottom: 0; }
+
 /* ---------- Downloads list ---------- */
 .downloads { list-style: none; padding: 0; margin: 1.5rem 0; display: flex; flex-direction: column; gap: .9rem; }
 .download { display: flex; align-items: center; gap: 1rem; background: var(--bg-2); border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1.2rem; box-shadow: var(--shadow); }

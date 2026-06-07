@@ -46,6 +46,14 @@ const SITE_PAGES = [
     tags: ["History", "Champions of Siberys"]
   },
 
+  {
+    title: "The Draconic Prophecy",
+    url: "lore/draconic-prophecy.html",
+    section: "Lore",
+    summary: "Cryptic visions of the seers of Draksholm — of three Champions, and the darkness they must face, including Zaverys the Black.",
+    tags: ["History", "Prophecy"]
+  },
+
   // ----- Sessions -----
   {
     title: "Session 1 — Arrival in the City of Towers",
