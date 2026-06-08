@@ -54,13 +54,62 @@ const SITE_PAGES = [
     tags: ["History", "Prophecy"]
   },
 
-  // ----- Sessions -----
+  // ----- Sessions (by arc) -----
   {
-    title: "Session 1 — Arrival in the City of Towers",
-    url: "sessions/session-01-arrival.html",
+    title: "Arc 1 — Blood on the Lake",
+    url: "sessions/arc-1-blood-on-the-lake.html",
     section: "Sessions",
-    summary: "The party arrives by airship, takes a strange job, and makes its first enemy.",
-    tags: ["Session", "City of Towers"]
+    summary: "Sessions 1–4. Three strangers, scarred by the Mourning, are drawn together in Karrnath, hunting the dead that rise around Lakeside and Lake Dark.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 2 — Unrest in Thaliost",
+    url: "sessions/arc-2-unrest-in-thaliost.html",
+    section: "Sessions",
+    summary: "Sessions 5–10. The party uncovers the Silver Flame's hidden history with werewolves and the secret Silver Moon, amid the unrest of occupied Thaliost.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 3 — The Dark Pack",
+    url: "sessions/arc-3-the-dark-pack.html",
+    section: "Sessions",
+    summary: "Sessions 11–16. Riding with the Silver Moon into the Graywall Mountains to fight the werewolves of the Dark Pack, the heroes learn the Emerald Claw hunts the Fount of Inarieth.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 4 — The Fount of Inarieth",
+    url: "sessions/arc-4-the-fount-of-inarieth.html",
+    section: "Sessions",
+    summary: "Sessions 17–21. A race across the Blade Desert to Q'barra to reach the fabled Fount of Inarieth before the Order of the Emerald Claw.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 5 — The Pirates of Lhazaar",
+    url: "sessions/arc-5-the-pirates-of-lhazaar.html",
+    section: "Sessions",
+    summary: "Sessions 22–25. Among the pirates of the Lhazaar Principalities, the party chases a star map to the lost island of Draksholm.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 6 — The Ruins of Draksholm",
+    url: "sessions/arc-6-the-ruins-of-draksholm.html",
+    section: "Sessions",
+    summary: "Sessions 26–33. On the dead island of Draksholm, the heroes gather ancient relics and the first secrets of the Draconic Prophecy.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 7 — Legacy of Solamnia",
+    url: "sessions/arc-7-legacy-of-solamnia.html",
+    section: "Sessions",
+    summary: "Sessions 34–45. From the haunted Gloaming and a buried Solamnic fortress to the edge of the Mournlands, a fallen kingdom's legacy shapes the war to come.",
+    tags: ["Session"]
+  },
+  {
+    title: "Arc 8 — Forged by War",
+    url: "sessions/arc-8-forged-by-war.html",
+    section: "Sessions",
+    summary: "Sessions 46–47. Deep in the Mournlands, the party infiltrates the warforged dominion rising at Eston and sparks a desperate uprising.",
+    tags: ["Session"]
   },
 
   // ----- NPCs -----
