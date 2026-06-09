@@ -24,13 +24,6 @@ const SITE_PAGES = [
     tags: ["History", "Khorvaire"]
   },
   {
-    title: "The Last War",
-    url: "lore/the-last-war.html",
-    section: "Lore",
-    summary: "A century of conflict that shattered the old kingdom and redrew every border.",
-    tags: ["History", "War"]
-  },
-  {
     title: "The Dragonmarked Houses",
     url: "lore/dragonmarked-houses.html",
     section: "Lore",
