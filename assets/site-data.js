@@ -47,6 +47,35 @@ const SITE_PAGES = [
     tags: ["History", "Prophecy"]
   },
 
+  {
+    title: "Gods & Demigods",
+    url: "lore/gods-and-demigods.html",
+    section: "Lore",
+    summary: "The Progenitor Dragons and the powers behind creation — Siberys, Eberron, Khyber, Zaverys, and Alderdia.",
+    tags: ["Religion"]
+  },
+  {
+    title: "Archdruids of Eberron",
+    url: "lore/archdruids-of-eberron.html",
+    section: "Lore",
+    summary: "The greatest druids of the age — Oalian the Great Druid, and Eladan Ardosar, founder of Arcanix.",
+    tags: ["Factions", "Druids"]
+  },
+  {
+    title: "Warlocks of Khyber",
+    url: "lore/warlocks-of-khyber.html",
+    section: "Lore",
+    summary: "Khyber's chosen — Lord Soth, the Umbral Shade, the Great Demon, the Lord of Dust, and the Lord of Blades.",
+    tags: ["Factions", "Villains"]
+  },
+  {
+    title: "Visions in the Great Diamond",
+    url: "lore/visions-in-the-great-diamond.html",
+    section: "Lore",
+    summary: "What each Champion witnessed within the Great Diamond — the Siberys, Eberron, and Khyber domains.",
+    tags: ["Prophecy"]
+  },
+
   // ----- Sessions (by arc) -----
   {
     title: "Arc 1 — Blood on the Lake",
