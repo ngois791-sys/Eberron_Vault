@@ -28,7 +28,7 @@ const SITE_PAGES = [
     url: "lore/dragonmarked-houses.html",
     section: "Lore",
     summary: "The mercantile dynasties whose arcane birthmarks grant them a near-monopoly on magic and trade. All fourteen houses, their marks, sigils, and known members.",
-    tags: ["Factions", "Dragonmarked Houses"]
+    tags: ["Divine Agents","Dragonmarked Houses"]
   },
 
   {
@@ -59,14 +59,14 @@ const SITE_PAGES = [
     url: "lore/archdruids-of-eberron.html",
     section: "Lore",
     summary: "The greatest druids of the age — Oalian the Great Druid, and Eladan Ardosar, founder of Arcanix.",
-    tags: ["Factions", "Druids"]
+    tags: ["Divine Agents","Druids"]
   },
   {
     title: "Warlocks of Khyber",
     url: "lore/warlocks-of-khyber.html",
     section: "Lore",
     summary: "Khyber's chosen — Lord Soth, the Umbral Shade, the Great Demon, the Lord of Dust, and the Lord of Blades.",
-    tags: ["Factions", "Villains"]
+    tags: ["Divine Agents","Villains"]
   },
   {
     title: "Visions in the Great Diamond",
