@@ -15,7 +15,7 @@
 
 const SITE_PAGES = [
 
-  // ----- Lore -----
+  // ----- Lore (order matches the Lore tab) -----
   {
     title: "An Introduction to Khorvaire",
     url: "lore/introduction.html",
@@ -24,35 +24,18 @@ const SITE_PAGES = [
     tags: ["History", "Khorvaire"]
   },
   {
-    title: "The Dragonmarked Houses",
-    url: "lore/dragonmarked-houses.html",
-    section: "Lore",
-    summary: "The mercantile dynasties whose arcane birthmarks grant them a near-monopoly on magic and trade. All fourteen houses, their marks, sigils, and known members.",
-    tags: ["Divine Agents","Dragonmarked Houses"]
-  },
-
-  {
-    title: "Ancient Paladins — Champions of Siberys",
-    url: "lore/ancient-paladins.html",
-    section: "Lore",
-    summary: "The great paladins of ages past — Tira Miron, Inarieth, Khardam Silvereye, and Traelor — whose spirits have armed Ziolda.",
-    tags: ["History", "Champions of Siberys"]
-  },
-
-  {
-    title: "The Draconic Prophecy",
-    url: "lore/draconic-prophecy.html",
-    section: "Lore",
-    summary: "Cryptic visions of the seers of Draksholm — of three Champions, and the darkness they must face, including Zaverys the Black.",
-    tags: ["History", "Prophecy"]
-  },
-
-  {
     title: "Gods & Demigods",
     url: "lore/gods-and-demigods.html",
     section: "Lore",
     summary: "The Progenitor Dragons and the powers behind creation — Siberys, Eberron, Khyber, Zaverys, and Alderdia.",
     tags: ["Religion"]
+  },
+  {
+    title: "The Dragonmarked Houses",
+    url: "lore/dragonmarked-houses.html",
+    section: "Lore",
+    summary: "The mercantile dynasties whose arcane birthmarks grant them a near-monopoly on magic and trade. All fourteen houses, their marks, sigils, and known members.",
+    tags: ["Divine Agents","Dragonmarked Houses"]
   },
   {
     title: "Archdruids of Eberron",
@@ -67,6 +50,20 @@ const SITE_PAGES = [
     section: "Lore",
     summary: "Khyber's chosen — Lord Soth, the Umbral Shade, the Great Demon, the Lord of Dust, and the Lord of Blades.",
     tags: ["Divine Agents","Villains"]
+  },
+  {
+    title: "Ancient Paladins — Champions of Siberys",
+    url: "lore/ancient-paladins.html",
+    section: "Lore",
+    summary: "The great paladins of ages past — Tira Miron, Inarieth, Khardam Silvereye, and Traelor — whose spirits have armed Ziolda.",
+    tags: ["History", "Champions of Siberys"]
+  },
+  {
+    title: "The Draconic Prophecy",
+    url: "lore/draconic-prophecy.html",
+    section: "Lore",
+    summary: "Cryptic visions of the seers of Draksholm — of three Champions, and the darkness they must face, including Zaverys the Black.",
+    tags: ["History", "Prophecy"]
   },
   {
     title: "Visions in the Great Diamond",

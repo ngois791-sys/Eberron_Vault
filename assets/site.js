@@ -117,4 +117,44 @@
       tagRoot.innerHTML = header + cloud;
     }
   }
+
+  /* ---------------- Previous / Next pager (within the current section) ---------------- */
+  (function () {
+    var path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/");
+    function ends(s, suf) { return suf.length <= s.length && s.slice(s.length - suf.length) === suf; }
+
+    var idx = -1;
+    for (var i = 0; i < PAGES.length; i++) {
+      if (ends(path, PAGES[i].url)) { idx = i; break; }
+    }
+    if (idx < 0) return;
+    var cur = PAGES[idx];
+    if (cur.section === "Section") return;            // not on index / hub pages
+
+    var sect = PAGES.filter(function (p) { return p.section === cur.section; });
+    var pos = sect.indexOf(cur);
+    var prev = pos > 0 ? sect[pos - 1] : null;
+    var next = pos < sect.length - 1 ? sect[pos + 1] : null;
+    if (!prev && !next) return;
+
+    var entry = document.querySelector(".entry");
+    if (!entry) return;
+
+    function slot(p, dir) {
+      if (!p) return '<span class="pager-btn pager-empty"></span>';
+      var label = dir === "prev" ? "&lsaquo; Previous" : "Next &rsaquo;";
+      return '<a class="pager-btn pager-' + dir + '" href="' + BASE + escapeHtml(p.url) + '">' +
+               '<span class="pager-dir">' + label + '</span>' +
+               '<span class="pager-title">' + escapeHtml(p.title) + '</span></a>';
+    }
+
+    var nav = document.createElement("nav");
+    nav.className = "pager";
+    nav.setAttribute("aria-label", "Previous and next page");
+    nav.innerHTML = slot(prev, "prev") + slot(next, "next");
+
+    var back = entry.querySelector(".back-link");
+    if (back) { back.parentNode.insertBefore(nav, back); }
+    else { entry.appendChild(nav); }
+  })();
 })();
