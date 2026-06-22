@@ -88,7 +88,6 @@
           return '<a class="card" href="' + BASE + escapeHtml(p.url) + '">' +
                    (p.section ? '<p class="eyebrow">' + escapeHtml(p.section) + '</p>' : '') +
                    '<h3>' + escapeHtml(p.title) + '</h3>' +
-                   (p.summary ? '<p>' + escapeHtml(p.summary) + '</p>' : '') +
                  '</a>';
         }).join("") + '</div>';
       }
