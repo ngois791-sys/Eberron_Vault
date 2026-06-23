@@ -35,7 +35,7 @@ const SITE_PAGES = [
     url: "lore/dragonmarked-houses.html",
     section: "Lore",
     summary: "The mercantile dynasties whose arcane birthmarks grant them a near-monopoly on magic and trade. All fourteen houses, their marks, sigils, and known members.",
-    tags: ["Divine Agents","Dragonmarked Houses"]
+    tags: ["Dragonmarked Houses"]
   },
   {
     title: "Archdruids of Eberron",
@@ -56,7 +56,7 @@ const SITE_PAGES = [
     url: "lore/ancient-paladins.html",
     section: "Lore",
     summary: "The great paladins of ages past — Tira Miron, Inarieth, Khardam Silvereye, and Traelor — whose spirits have armed Ziolda.",
-    tags: ["History", "Champions of Siberys"]
+    tags: ["Divine Agents", "History", "Champions of Siberys"]
   },
   {
     title: "The Draconic Prophecy",
